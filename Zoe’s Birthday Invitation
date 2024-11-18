@@ -46,7 +46,7 @@
   <img id="cover" src="请柬封面.jpg" alt="封面图">
 
   <!-- 输入框和按钮 -->
-  <p>请输入名字以查看对应图片：</p>
+  <p>输入你的名字，查看专属请柬！^^</p>
   <input type="text" id="nameInput" placeholder="输入名字">
   <button onclick="showImage()">查看图片</button>
 
