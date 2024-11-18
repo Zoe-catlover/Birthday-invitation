@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>点名看图片</title>
+  <title>Zoe's Birthday Invitation</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -53,12 +53,12 @@
   <!-- 输入框和按钮 -->
   <p>输入你的名字，查看专属请柬！^^</p>
   <input type="text" id="nameInput" placeholder="输入名字">
-  <button onclick="showImage()">查看图片</button>
+  <button onclick="showImage()">查看请柬</button>
 
   <!-- 显示结果 -->
   <div class="output">
     <p id="errorMessage" class="error"></p>
-    <img id="resultImage" src="" alt="图片会显示在这里">
+    <img id="resultImage" src="" alt="请柬会显示在这里">
   </div>
 
   <script>
@@ -89,7 +89,7 @@
         resultImage.src = imageMap[nameInput];
         resultImage.alt = `${nameInput} 的图片`;
       } else {
-        errorMessage.textContent = "未找到对应请柬，请检查输入的名字！";
+        errorMessage.textContent = "未找到对应请柬，请检查输入的名字(>﹏<)";
       }
     }
   </script>
