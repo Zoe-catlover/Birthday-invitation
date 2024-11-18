@@ -42,6 +42,11 @@
   </style>
 </head>
 <body>
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="22 Taylor.mp3" type="audio/mpeg">
+    您的浏览器不支持音频播放。
+  </audio>
+
   <!-- 封面图 -->
   <img id="cover" src="请柬封面.jpg" alt="封面图">
 
