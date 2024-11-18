@@ -43,7 +43,7 @@
 </head>
 <body>
   <!-- 封面图 -->
-  <img id="cover" src="images/cover.jpg" alt="封面图">
+  <img id="cover" src="请柬封面.jpg" alt="封面图">
 
   <!-- 输入框和按钮 -->
   <p>请输入名字以查看对应图片：</p>
@@ -63,7 +63,7 @@
       
       // 名字和图片路径的映射
       const imageMap = {
-        "徐可婧": "徐可婧e.jpg",
+        "徐可婧": "徐可婧.jpg",
         "陈依然": "陈依然.jpg",
         "潘美恩": "潘美恩.jpg",
         "王筠": "王筠.jpg",
