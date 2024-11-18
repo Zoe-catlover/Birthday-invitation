@@ -84,7 +84,7 @@
         resultImage.src = imageMap[nameInput];
         resultImage.alt = `${nameInput} 的图片`;
       } else {
-        errorMessage.textContent = "未找到对应的图片，请检查输入的名字！";
+        errorMessage.textContent = "未找到对应请柬，请检查输入的名字！";
       }
     }
   </script>
