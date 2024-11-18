@@ -63,14 +63,14 @@
       
       // 名字和图片路径的映射
       const imageMap = {
-        "Alice": "images/alice.jpg",
-        "Bob": "images/bob.jpg",
-        "Charlie": "images/charlie.jpg",
-        "David": "images/david.jpg",
-        "Eve": "images/eve.jpg",
-        "Frank": "images/frank.jpg",
-        "Grace": "images/grace.jpg",
-        "Hank": "images/hank.jpg"
+        "徐可婧": "徐可婧e.jpg",
+        "陈依然": "陈依然.jpg",
+        "潘美恩": "潘美恩.jpg",
+        "王筠": "王筠.jpg",
+        "谢逅": "谢逅.jpg",
+        "金彦君": "金彦君.jpg",
+        "夏天苒": "夏天苒.jpg",
+        "唐嘉骐": "唐嘉骐.jpg"
       };
 
       // 清空错误信息和结果图片
