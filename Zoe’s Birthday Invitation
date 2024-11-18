@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>点名看图片</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    #cover {
+      width: 300px;
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 10px;
+      width: 300px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .output img {
+      margin-top: 20px;
+      max-width: 400px;
+      height: auto;
+    }
+    .error {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 封面图 -->
+  <img id="cover" src="images/cover.jpg" alt="封面图">
+
+  <!-- 输入框和按钮 -->
+  <p>请输入名字以查看对应图片：</p>
+  <input type="text" id="nameInput" placeholder="输入名字">
+  <button onclick="showImage()">查看图片</button>
+
+  <!-- 显示结果 -->
+  <div class="output">
+    <p id="errorMessage" class="error"></p>
+    <img id="resultImage" src="" alt="图片会显示在这里">
+  </div>
+
+  <script>
+    function showImage() {
+      // 获取输入的名字
+      const nameInput = document.getElementById("nameInput").value.trim();
+      
+      // 名字和图片路径的映射
+      const imageMap = {
+        "Alice": "images/alice.jpg",
+        "Bob": "images/bob.jpg",
+        "Charlie": "images/charlie.jpg",
+        "David": "images/david.jpg",
+        "Eve": "images/eve.jpg",
+        "Frank": "images/frank.jpg",
+        "Grace": "images/grace.jpg",
+        "Hank": "images/hank.jpg"
+      };
+
+      // 清空错误信息和结果图片
+      const errorMessage = document.getElementById("errorMessage");
+      const resultImage = document.getElementById("resultImage");
+      errorMessage.textContent = "";
+      resultImage.src = "";
+
+      // 显示对应的图片或错误信息
+      if (imageMap[nameInput]) {
+        resultImage.src = imageMap[nameInput];
+        resultImage.alt = `${nameInput} 的图片`;
+      } else {
+        errorMessage.textContent = "未找到对应的图片，请检查输入的名字！";
+      }
+    }
+  </script>
+</body>
+</html>
